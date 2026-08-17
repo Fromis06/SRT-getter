@@ -6,6 +6,8 @@ This project extracts subtitles from video with a hybrid Go + Python workflow:
 - Go manages the job lifecycle, communicates with the Python worker, supports cancellation, and exports SRT.
 - Python uses OpenCV for fast frame analysis and EasyOCR for text recognition.
 
+![alt text](https://files.catbox.moe/croaju.gif)
+
 ## Core idea
 
 The expensive operation is OCR. Running OCR on every sampled frame wastes GPU time because the same subtitle may remain on screen for many frames. This project separates the problem into two stages:
@@ -210,7 +212,7 @@ subtitle/
 │  └─ src/App.tsx            # React workflow UI
 ├─ app.go                    # Wails methods and job state
 ├─ worker.go                 # Go ↔ Python process bridge
-└─  srt.go                    # SRT formatting and saving
+└─  srt.go                   # SRT formatting and saving
 
 ```
 ## Installation
