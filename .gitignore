@@ -1,0 +1,29 @@
+# Go / Wails
+build/bin/
+go.work
+*_test.go
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/wailsjs/
+frontend/package.json.md5
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local/editor files
+.idea/
+.vscode/
+*.log
+.DS_Store
+
+# Local test media (keep test source files trackable)
+test/*.mp4
+test/*.mkv
+test/*.avi
+test/*.mov
+test/*.webm
+test/*.m4v

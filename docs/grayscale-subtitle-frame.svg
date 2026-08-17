@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-labelledby="title desc">
+  <title id="title">Two grayscale subtitle crops</title>
+  <desc id="desc">Anchor and current subtitle crops shown as grayscale images for pixel comparison.</desc>
+  <defs>
+    <linearGradient id="anchor-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#252525"/>
+    </linearGradient>
+    <linearGradient id="current-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#626262"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+    <filter id="text-soft"><feGaussianBlur stdDeviation=".35"/></filter>
+  </defs>
+
+  <rect width="960" height="330" fill="#111"/>
+
+  <text x="235" y="32" text-anchor="middle" fill="#d3d3d3" font-family="Arial, sans-serif" font-size="17" font-weight="700">Anchor frame</text>
+  <text x="725" y="32" text-anchor="middle" fill="#d3d3d3" font-family="Arial, sans-serif" font-size="17" font-weight="700">Current frame</text>
+
+  <rect x="35" y="56" width="400" height="220" rx="8" fill="url(#anchor-bg)" stroke="#777" stroke-width="2"/>
+  <rect x="525" y="56" width="400" height="220" rx="8" fill="url(#current-bg)" stroke="#777" stroke-width="2"/>
+
+  <path d="M35 160 C120 125 170 178 245 143 S365 134 435 161 V276 H35Z" fill="#1c1c1c" opacity=".5"/>
+  <path d="M525 160 C610 125 660 178 735 143 S855 134 925 161 V276 H525Z" fill="#202020" opacity=".5"/>
+
+  <rect x="83" y="163" width="304" height="62" rx="5" fill="#050505" opacity=".86"/>
+  <rect x="573" y="163" width="304" height="62" rx="5" fill="#050505" opacity=".86"/>
+
+  <text x="235" y="204" text-anchor="middle" fill="#f4f4f4" font-family="Arial, sans-serif" font-size="25" font-weight="700" filter="url(#text-soft)">I CAN'T SLEEP</text>
+  <text x="725" y="204" text-anchor="middle" fill="#e9e9e9" font-family="Arial, sans-serif" font-size="25" font-weight="700" filter="url(#text-soft)">I CAN'T SLEEP</text>
+
+  <text x="235" y="304" text-anchor="middle" fill="#a5a5a5" font-family="Arial, sans-serif" font-size="13">grayscale anchor A</text>
+  <text x="725" y="304" text-anchor="middle" fill="#a5a5a5" font-family="Arial, sans-serif" font-size="13">grayscale current Gₜ</text>
+</svg>

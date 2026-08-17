@@ -1,0 +1,4 @@
+opencv-python>=4.8,<5
+# Python 3.13 requires a NumPy 2.x wheel.
+numpy>=2,<3
+easyocr>=1.7,<2
