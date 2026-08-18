@@ -6,7 +6,7 @@ This project extracts subtitles from video with a hybrid Go + Python workflow:
 - Go manages the job lifecycle, communicates with the Python worker, supports cancellation, and exports SRT.
 - Python uses OpenCV for fast frame analysis and EasyOCR for text recognition.
 
-![alt text](https://files.catbox.moe/croaju.gif)
+![alt text](https://files.catbox.moe/nhm8xp.gif)
 
 ## Core idea
 
